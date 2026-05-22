@@ -84,3 +84,63 @@ if (switchBtn) {
     document.documentElement.classList.toggle("dark", switchBtn.checked);
   });
 }
+
+const cards = document.querySelectorAll(".card");
+
+function isTextTruncated(text) {
+  return text.scrollWidth > text.clientWidth;
+}
+
+function syncCardState(card) {
+  const text = card.querySelector(".text-truncate");
+  const seeMore = card.querySelector(".see-more");
+  const seeLess = card.querySelector(".see-less");
+
+  if (!text || !seeMore || !seeLess) {
+    return;
+  }
+
+  text.classList.remove("is-open");
+  seeLess.classList.add("hidden");
+  seeMore.classList.toggle("hidden", !isTextTruncated(text));
+}
+
+function closeAllCards() {
+  cards.forEach((card) => {
+    syncCardState(card);
+  });
+}
+
+function checkTruncate() {
+  cards.forEach((card) => {
+    syncCardState(card);
+  });
+}
+
+cards.forEach((card) => {
+  const text = card.querySelector(".text-truncate");
+  const seeMore = card.querySelector(".see-more");
+  const seeLess = card.querySelector(".see-less");
+
+  if (!text || !seeMore || !seeLess) {
+    return;
+  }
+
+  seeMore.addEventListener("click", () => {
+    closeAllCards();
+
+    text.classList.add("is-open");
+    seeMore.classList.add("hidden");
+    seeLess.classList.remove("hidden");
+  });
+
+  seeLess.addEventListener("click", () => {
+    text.classList.remove("is-open");
+    seeLess.classList.add("hidden");
+    syncCardState(card);
+  });
+});
+
+checkTruncate();
+
+window.addEventListener("resize", checkTruncate);

@@ -40,62 +40,81 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit ab nihil.
     </p>
     <div class="w-48 mx-auto mt-4 text-center">
-      <a
-        href="#"
-        class="btn-primary"
-      >
-        Hire me
-      </a>
+      <a href="#" class="btn-primary"> Hire me </a>
     </div>
 
-    <section
-      class="flex flex-col items-center px-2 py-6 md:grid md:grid-cols-3 md:gap-8"
-    >
+    <section class="flex flex-col px-2 py-6 md:grid md:grid-cols-3 md:gap-8">
       <h2 class="hidden">card</h2>
       <div class="card">
         <img
-          class="card-img"
+          class="card-img w-10 h-auto"
           src="/src/assets/icons/vital_signs_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
           alt="vital signs"
-          class="w-6 h-auto"
         />
-        <h3 class="card-title">High eperiences</h3>
-        <p class="card-content">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
-          velit consectetur assumenda enim, sint quo debitis quidem perferendis!
-          Repellendus reiciendis labore tempore? Ad, in corporis maxime iusto
-          debitis sunt dignissimos?
-        </p>
+
+        <h3 class="card-title">High experiences</h3>
+
+        <div class="card-content">
+          <p class="text-truncate">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            velit consectetur assumenda enim, sint quo debitis quidem
+            perferendis! Repellendus reiciendis labore tempore? Ad, in corporis
+            maxime iusto debitis sunt dignissimos?
+          </p>
+
+          <button type="button" class="see-more">See more</button>
+
+          <div class="see-less-wrapper">
+            <button type="button" class="see-less hidden md:hidden">See less</button>
+          </div>
+        </div>
       </div>
       <div class="card">
         <img
-          class="card-img"
+          class="card-img w-10 h-auto"
           src="/src/assets/icons/deployed_code_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
-          alt="vital signs"
-          class="w-6 h-auto"
+          alt="deploy"
         />
-        <h3 class="card-title">Useful sandboxes</h3>
-        <p class="card-content">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
-          velit consectetur assumenda enim, sint quo debitis quidem perferendis!
-          Repellendus reiciendis labore tempore? Ad, in corporis maxime iusto
-          debitis sunt dignissimos?
-        </p>
+
+        <h3 class="card-title">Usefull sandboxes</h3>
+
+        <div class="card-content">
+          <p class="text-truncate">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            velit consectetur assumenda enim, sint quo debitis quidem
+            perferendis! Repellendus reiciendis labore tempore? Ad, in corporis
+            maxime iusto debitis sunt dignissimos?
+          </p>
+
+          <button type="button" class="see-more">See more</button>
+
+          <div class="see-less-wrapper">
+            <button type="button" class="see-less hidden md:hidden">See less</button>
+          </div>
+        </div>
       </div>
       <div class="card">
         <img
-          class="card-img"
+          class="card-img w-10 h-auto"
           src="/src/assets/icons/local_cafe_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
-          alt="vital signs"
-          class="w-6 h-auto"
+          alt="coffee"
         />
+
         <h3 class="card-title">Success side projects</h3>
-        <p class="card-content">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
-          velit consectetur assumenda enim, sint quo debitis quidem perferendis!
-          Repellendus reiciendis labore tempore? Ad, in corporis maxime iusto
-          debitis sunt dignissimos?
-        </p>
+
+        <div class="card-content">
+          <p class="text-truncate">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            velit consectetur assumenda enim, sint quo debitis quidem
+            perferendis! Repellendus reiciendis labore tempore? Ad, in corporis
+            maxime iusto debitis sunt dignissimos?
+          </p>
+
+          <button type="button" class="see-more">See more</button>
+          <div class="see-less-wrapper">
+            <button type="button" class="see-less hidden md:hidden">See less</button>
+          </div>
+        </div>
       </div>
     </section>
     <section class="flex flex-col px-3 py-6 md:grid md:grid-cols-2 md:gap-8">
@@ -114,7 +133,7 @@
             <div>1.</div>
             <div>
               <h3 class="font-semibold">Demo API generator</h3>
-              <p>
+              <p class="text-pretty">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequuntur perferendis quo dolor quos? Quis at error
                 reprehenderit quod aspernatur itaque repellat quo, deserunt
@@ -126,7 +145,7 @@
             <div>2.</div>
             <div>
               <h3 class="font-semibold">Demo API generator</h3>
-              <p>
+              <p class="text-pretty">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequuntur perferendis quo dolor quos? Quis at error
                 reprehenderit quod aspernatur itaque repellat quo, deserunt
@@ -138,7 +157,7 @@
             <div>3.</div>
             <div>
               <h3 class="font-semibold">Demo API generator</h3>
-              <p>
+              <p class="text-pretty">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequuntur perferendis quo dolor quos? Quis at error
                 reprehenderit quod aspernatur itaque repellat quo, deserunt
@@ -150,84 +169,91 @@
       </div>
     </section>
     <section class="px-3 py-6">
-      <div >
+      <div>
         <h2 class="title-section">Education</h2>
         <p class="text-xs py-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
-        </div>
-        <div class="flex flex-col items-center py-6 md:grid md:grid-cols-3 md:gap-8">
+      </div>
+      <div
+        class="flex flex-col items-center py-6 md:grid md:grid-cols-3 md:gap-8"
+      >
         <div class="card">
-          <h3 class="card-title"> 2015 - 2016</h3>
+          <h3 class="card-title">2015 - 2016</h3>
           <p class="card-content">
-            lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-            perferendis quo dolor quos? Quis at error reprehenderit quod
-            aspernatur itaque repellat quo, deserunt alias quae voluptas,
+            lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perferendis quo dolor quos? Quis at error reprehenderit
+            quod aspernatur itaque repellat quo, deserunt alias quae voluptas,
             expedita molestiae accusamus tempora?
           </p>
           <a href="#" class="card-link">See the place here</a>
         </div>
         <div class="card">
-          <h3 class="card-title"> 2015 - 2016</h3>
-          <p class="card-content">lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-            perferendis quo dolor quos? Quis at error reprehenderit quod
-            aspernatur itaque repellat quo, deserunt alias quae voluptas,
+          <h3 class="card-title">2015 - 2016</h3>
+          <p class="card-content">
+            lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perferendis quo dolor quos? Quis at error reprehenderit
+            quod aspernatur itaque repellat quo, deserunt alias quae voluptas,
             expedita molestiae accusamus tempora?
           </p>
           <a href="#" class="card-link">See the place here</a>
         </div>
         <div class="card">
-          <h3 class="card-title"> 2015 - 2016</h3>
-          <p class="card-content">lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-            perferendis quo dolor quos? Quis at error reprehenderit quod
-            aspernatur itaque repellat quo, deserunt alias quae voluptas,
+          <h3 class="card-title">2015 - 2016</h3>
+          <p class="card-content">
+            lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perferendis quo dolor quos? Quis at error reprehenderit
+            quod aspernatur itaque repellat quo, deserunt alias quae voluptas,
             expedita molestiae accusamus tempora?
           </p>
           <a href="#" class="card-link">See the place here</a>
         </div>
         <div class="card">
-          <h3 class="card-title"> 2015 - 2016</h3>
-          <p class="card-content">lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-            perferendis quo dolor quos? Quis at error reprehenderit quod
-            aspernatur itaque repellat quo, deserunt alias quae voluptas,
+          <h3 class="card-title">2015 - 2016</h3>
+          <p class="card-content">
+            lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perferendis quo dolor quos? Quis at error reprehenderit
+            quod aspernatur itaque repellat quo, deserunt alias quae voluptas,
             expedita molestiae accusamus tempora?
           </p>
           <a href="#" class="card-link">See the place here</a>
         </div>
         <div class="card">
-          <h3 class="card-title"> 2015 - 2016</h3>
-          <p class="card-content">lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-            perferendis quo dolor quos? Quis at error reprehenderit quod
-            aspernatur itaque repellat quo, deserunt alias quae voluptas,
+          <h3 class="card-title">2015 - 2016</h3>
+          <p class="card-content">
+            lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perferendis quo dolor quos? Quis at error reprehenderit
+            quod aspernatur itaque repellat quo, deserunt alias quae voluptas,
             expedita molestiae accusamus tempora?
           </p>
           <a href="#" class="card-link">See the place here</a>
         </div>
         <div class="card">
-          <h3 class="card-title"> 2015 - 2016</h3>
-          <p class="card-content">lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-            perferendis quo dolor quos? Quis at error reprehenderit quod
-            aspernatur itaque repellat quo, deserunt alias quae voluptas,
+          <h3 class="card-title">2015 - 2016</h3>
+          <p class="card-content">
+            lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perferendis quo dolor quos? Quis at error reprehenderit
+            quod aspernatur itaque repellat quo, deserunt alias quae voluptas,
             expedita molestiae accusamus tempora?
           </p>
           <a href="#" class="card-link">See the place here</a>
         </div>
       </div>
-        </section>  
+    </section>
     <section
       class="flex flex-col items-center px-3 py-6 md:grid md:grid-cols-1 md:gap-8"
     >
       <h2 class="title-section text-4xl text-center">
         Please do not measure your skill in percentages !
       </h2>
-      <p class="text-center pt-6">
+      <p class="text-center pt-6 text-pretty">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit
         voluptatum suscipit illo quisquam nesciunt ad cum tempora minus quae
         consectetur et explicabo placeat aliquid nulla eos excepturi, hic ipsam?
       </p>
 
       <h3 class="title-section self-start pt-6">Experience</h3>
-      <p class="self-start pt-6">
+      <p class="self-start pt-6 text-pretty">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
       <table class="w-full border-separate border-spacing-y-2 pt-4 md:px-24">
@@ -282,7 +308,9 @@
     </section>
     <section class="px-3 pb-12">
       <h2 class="title-section">Brands</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p class="text-pretty">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
 
       <div
         class="flex flex-col items-center gap-8 py-4 md:grid md:grid-cols-3 md:justify-items-center md:items-center"
@@ -321,7 +349,7 @@
     </section>
     <section class="px-3 pb-12">
       <h2 class="title-section">Testimonials</h2>
-      <p class="pb-12">
+      <p class="pb-12 text-pretty">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
       <div

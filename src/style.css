@@ -87,7 +87,7 @@
   }
 
   .card-content {
-    @apply text-gray-700 text-xs;
+    @apply text-gray-700 text-xs text-pretty;
   }
 
   html.dark .card-content {
@@ -95,7 +95,7 @@
   }
 
   .card-author {
-    @apply font-semibold text-sm;
+    @apply font-semibold text-sm pt-2;
   }
 
   .card-author span {
@@ -109,6 +109,55 @@
     @apply text-cyan-700 text-xs underline font-semibold mt-4 inline-block transition-colors duration-300;
   }
 
+  /* =====================================================
+   TRUNCATE TEXT
+===================================================== */
+  .text-truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  @media (width >= 48rem) {
+    .text-truncate {
+      overflow: visible;
+      white-space: normal;
+      text-overflow: clip;
+    }
+  }
+
+  /* texte ouvert */
+  .text-truncate.is-open {
+    overflow: visible;
+    white-space: normal;
+  }
+
+ /* =====================================================
+   SEE MORE / SEE LESS
+===================================================== */
+.see-more,
+.see-less {
+  @apply relative mt-2 inline-block font-medium text-cyan-700 cursor-pointer md:hidden;
+}
+
+.see-more::after,
+.see-less::after {
+  content: "";
+  @apply absolute left-0 bottom-0 h-0.5 w-full;
+}
+
+/* gradient gauche → droite */
+.see-more::after {
+  @apply bg-linear-to-r from-gray-300 to-blue-700;
+}
+
+/* gradient droite → gauche */
+.see-less::after {
+  @apply bg-linear-to-r from-blue-700 to-gray-300;
+}
+.see-less-wrapper {
+  @apply flex justify-end;
+}
   /* =====================================================
      BUTTONS
   ===================================================== */
@@ -174,7 +223,7 @@
   }
 
   .slider-circle {
-    @apply absolute left-1 top-1 w-3 h-3 bg-white rounded-full border shadow-md transition-transform duration-300;
+    @apply absolute left-1 top-1 w-3 h-3 bg-green-500 rounded-full border shadow-md transition-transform duration-300;
   }
 
   .peer:checked ~ .slider-track {
