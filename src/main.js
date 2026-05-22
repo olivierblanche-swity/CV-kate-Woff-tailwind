@@ -1,5 +1,6 @@
 import "./style.css";
 
+// microdata
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -77,6 +78,7 @@ const addStructuredData = (data) => {
 
 addStructuredData(structuredData);
 
+// Dark mode toggle
 const switchBtn = document.querySelector("#switch");
 
 if (switchBtn) {
@@ -85,6 +87,7 @@ if (switchBtn) {
   });
 }
 
+// pour le truncate et button see-more 
 const cards = document.querySelectorAll(".card");
 
 function isTextTruncated(text) {
