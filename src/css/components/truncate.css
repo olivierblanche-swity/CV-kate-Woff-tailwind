@@ -1,0 +1,47 @@
+/* =========================================================
+   TRUNCATE TEXT
+========================================================= */
+
+
+  .text-truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  @media (width >= 48rem) {
+    .text-truncate {
+      overflow: visible;
+      white-space: normal;
+      text-overflow: clip;
+    }
+  }
+
+  .text-truncate.is-open {
+    overflow: visible;
+    white-space: normal;
+  }
+
+  .see-more,
+  .see-less {
+    @apply relative mt-2 inline-block font-medium text-cyan-700 cursor-pointer md:hidden;
+  }
+
+  .see-more::after,
+  .see-less::after {
+    content: "";
+    @apply absolute left-0 bottom-0 h-0.5 w-full;
+  }
+
+  .see-more::after {
+    @apply bg-linear-to-r from-gray-300 to-blue-700;
+  }
+
+  .see-less::after {
+    @apply bg-linear-to-r from-blue-700 to-gray-300;
+  }
+
+  .see-less-wrapper {
+    @apply flex justify-end;
+  }
+

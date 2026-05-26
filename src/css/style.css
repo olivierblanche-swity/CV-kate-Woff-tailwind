@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+@import "./base/base.css";
+
+@import "./components/timeline.css";
+@import "./components/card.css";
+@import "./components/truncate.css";
+@import "./components/buttons.css";
+@import "./components/table.css";
+@import "./components/slider.css";
+@import "./darkmode/darkmode.css";
+
+@import "./utilities/footer.css";
+@import "./utilities/title-section.css";

@@ -1,0 +1,35 @@
+/* =========================================================
+   SECTION TITLES
+========================================================= */
+
+
+  .title-section {
+    @apply text-2xl font-bold ;
+  }
+
+.title-section-center{
+  @apply text-center;
+}
+
+.title-4xl{
+  @apply text-4xl;
+}
+
+.title-td{
+  @apply text-xs;
+}
+
+.title-td-year {
+  @apply text-center md:text-left;
+}
+
+.title-li{
+  @apply font-semibold;
+}
+
+.title-first{
+  @apply font-semibold text-lg ;
+}
+.content-first{
+  @apply  text-5xl;
+}

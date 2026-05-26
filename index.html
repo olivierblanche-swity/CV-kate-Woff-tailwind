@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/style.css" rel="stylesheet" />
+    <link href="/src/css/style.css" rel="stylesheet" />
     <title>kate woff</title>
   </head>
   <body class="container mx-auto">
@@ -31,18 +31,14 @@
         class="w-40 h-auto mx-auto"
       />
     </div>
-
-    <h1 class="font-semibold text-lg text-center mx-auto pt-24 pb-4">
-      KATE WOFF
-    </h1>
-    <p class="text-center text-5xl pb-4">Junior Backend Developer</p>
-    <p class="text-center pb-4 px-2">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit ab nihil.
-    </p>
-    <div class="w-48 mx-auto mt-4 text-center">
-      <a href="#" class="btn-primary"> Hire me </a>
+    <div class="flex flex-col items-center justify-center">
+      <h1 class="title-first pt-24 pb-4">KATE WOFF</h1>
+      <p class="content-first pb-4">Junior Backend Developer</p>
+      <p class=" pb-4 px-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit ab nihil.
+      </p>
+      <a href="#" class="btn-primary">Hire me</a>
     </div>
-
     <section class="flex flex-col px-2 py-6 md:grid md:grid-cols-3 md:gap-8">
       <h2 class="hidden">card</h2>
       <div class="card">
@@ -120,7 +116,7 @@
     <section class="flex flex-col px-3 py-6 md:grid md:grid-cols-2 md:gap-8">
       <div>
         <h2 class="title-section">Portofolio</h2>
-        <p class="text-xs py-4">
+        <p class="py-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit
           voluptatum suscipit illo quisquam nesciunt ad cum tempora minus quae
           consectetur et explicabo placeat aliquid nulla eos excepturi, hic
@@ -132,7 +128,7 @@
           <li class="before-li py-2">
             <div>1.</div>
             <div>
-              <h3 class="font-semibold">Demo API generator</h3>
+              <h3 class="title-li">Demo API generator</h3>
               <p class="text-pretty">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequuntur perferendis quo dolor quos? Quis at error
@@ -144,7 +140,7 @@
           <li class="before-li py-2">
             <div>2.</div>
             <div>
-              <h3 class="font-semibold">Demo API generator</h3>
+              <h3 class="title-li">Demo API generator</h3>
               <p class="text-pretty">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequuntur perferendis quo dolor quos? Quis at error
@@ -156,7 +152,7 @@
           <li class="before-li py-2">
             <div>3.</div>
             <div>
-              <h3 class="font-semibold">Demo API generator</h3>
+              <h3 class="title-li">Demo API generator</h3>
               <p class="text-pretty">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequuntur perferendis quo dolor quos? Quis at error
@@ -170,8 +166,8 @@
     </section>
     <section class="px-3 py-6">
       <div>
-        <h2 class="title-section">Education</h2>
-        <p class="text-xs py-4">
+        <h2 class="title-section py-4">Education</h2>
+        <p class="py-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
       </div>
@@ -243,17 +239,19 @@
     <section
       class="flex flex-col items-center px-3 py-6 md:grid md:grid-cols-1 md:gap-8"
     >
-      <h2 class="title-section text-4xl text-center">
-        Please do not measure your skill in percentages !
-      </h2>
-      <p class="text-center pt-6 text-pretty">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit
-        voluptatum suscipit illo quisquam nesciunt ad cum tempora minus quae
-        consectetur et explicabo placeat aliquid nulla eos excepturi, hic ipsam?
-      </p>
-
+      <div class="title-section-center">
+        <h2 class="title-section title-4xl py-4">
+          Please do not measure your skill in percentages !
+        </h2>
+        <p class="max-w-2/3 m-auto pt-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit
+          voluptatum suscipit illo quisquam nesciunt ad cum tempora minus quae
+          consectetur et explicabo placeat aliquid nulla eos excepturi, hic
+          ipsam?
+        </p>
+      </div>
       <h3 class="title-section self-start pt-6">Experience</h3>
-      <p class="self-start pt-6 text-pretty">
+      <p class="self-start pt-6">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
       <table class="w-full border-separate border-spacing-y-2 pt-4 md:px-24">
@@ -267,41 +265,41 @@
 
         <tbody class="align-top">
           <tr>
-            <td class="text-xs">
+            <td class="title-td">
               Massa Fames <span class="text-gray-400">/New York</span>
             </td>
-            <td class="text-xs">Junior Front-end Developer Ior</td>
-            <td class="text-xs text-center md:text-left">2016</td>
+            <td class="title-td">Junior Front-end Developer Ior</td>
+            <td class="title-td title-td-year">2016</td>
           </tr>
 
           <tr>
-            <td class="text-xs">
+            <td class="title-td">
               Massa Fames <span class="text-gray-400">/New York</span>
             </td>
-            <td class="text-xs">Junior Front-end Developer Ior</td>
-            <td class="text-xs text-center md:text-left">2016</td>
+            <td class="title-td">Junior Front-end Developer Ior</td>
+            <td class="title-td title-td-year">2016</td>
           </tr>
 
           <tr>
-            <td class="text-xs">
+            <td class="title-td">
               Massa Fames <span class="text-gray-400">/New York</span>
             </td>
-            <td class="text-xs">Junior Front-end Developer Ior</td>
-            <td class="text-xs text-center md:text-left">2016</td>
+            <td class="title-td">Junior Front-end Developer Ior</td>
+            <td class="title-td title-td-year">2016</td>
           </tr>
           <tr>
-            <td class="text-xs">
+            <td class="title-td">
               Massa Fames <span class="text-gray-400">/New York</span>
             </td>
-            <td class="text-xs">Junior Front-end Developer Ior</td>
-            <td class="text-xs text-center md:text-left">2016</td>
+            <td class="title-td">Junior Front-end Developer Ior</td>
+            <td class="title-td title-td-year">2016</td>
           </tr>
           <tr>
-            <td class="text-xs">
+            <td class="title-td">
               Massa Fames <span class="text-gray-400">/New York</span>
             </td>
-            <td class="text-xs">Junior Front-end Developer Ior</td>
-            <td class="text-xs text-center md:text-left">2016</td>
+            <td class="title-td">Junior Front-end Developer Ior</td>
+            <td class="title-td title-td-year">2016</td>
           </tr>
         </tbody>
       </table>
@@ -356,7 +354,7 @@
         class="flex flex-col items-center py-6 md:grid md:grid-cols-3 md:gap-8"
       >
         <div class="card">
-          <p class="text-sm">
+          <p class="card-content-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consequuntur perferendis quo dolor quos? Quis at error reprehenderit
             quod aspernatur itaque repellat quo, deserunt alias quae voluptas,
@@ -369,7 +367,7 @@
           </p>
         </div>
         <div class="card">
-          <p class="text-sm">
+          <p class="card-content-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consequuntur perferendis quo dolor quos? Quis at error reprehenderit
             quod aspernatur itaque repellat quo, deserunt alias quae voluptas,
@@ -382,7 +380,7 @@
           </p>
         </div>
         <div class="card">
-          <p class="text-sm">
+          <p class="card-content-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consequuntur perferendis quo dolor quos? Quis at error reprehenderit
             quod aspernatur itaque repellat quo, deserunt alias quae voluptas,
@@ -395,7 +393,7 @@
           </p>
         </div>
         <div class="card">
-          <p class="text-sm">
+          <p class="card-content-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consequuntur perferendis quo dolor quos? Quis at error reprehenderit
             quod aspernatur itaque repellat quo, deserunt alias quae voluptas,
@@ -408,7 +406,7 @@
           </p>
         </div>
         <div class="card">
-          <p class="text-sm">
+          <p class="card-content-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consequuntur perferendis quo dolor quos? Quis at error reprehenderit
             quod aspernatur itaque repellat quo, deserunt alias quae voluptas,
@@ -421,7 +419,7 @@
           </p>
         </div>
         <div class="card">
-          <p class="text-sm">
+          <p class="card-content-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consequuntur perferendis quo dolor quos? Quis at error reprehenderit
             quod aspernatur itaque repellat quo, deserunt alias quae voluptas,

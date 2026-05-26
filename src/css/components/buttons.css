@@ -1,0 +1,20 @@
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+
+  .btn-primary {
+    @apply inline-block bg-cyan-950 text-white text-center py-1.5 px-4 rounded-md transition-colors duration-300;
+  }
+
+  html.dark .btn-primary {
+    @apply bg-cyan-700 hover:bg-cyan-600;
+  }
+
+  .btn-secondary {
+    @apply bg-white px-3 py-2 rounded-sm font-semibold transition-colors duration-300;
+  }
+
+  html.dark .btn-secondary {
+    @apply bg-gray-800 text-white;
+  }

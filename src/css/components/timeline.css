@@ -1,0 +1,22 @@
+/* =========================================================
+   PORTFOLIO TIMELINE
+========================================================= */
+
+
+  .before-li {
+    @apply relative pl-32 md:pl-24;
+  }
+
+  .before-li::before {
+    content: "";
+    @apply absolute left-0 top-8 w-28 h-0.5 bg-gray-400 md:left-8 md:top-5 md:w-10;
+  }
+
+  .before-li > div:first-child {
+    @apply absolute left-0 top-0 text-2xl leading-6;
+  }
+
+  .before-li h3 {
+    @apply text-xl leading-6 md:-mt-2;
+  }
+

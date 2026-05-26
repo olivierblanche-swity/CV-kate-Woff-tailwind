@@ -1,0 +1,12 @@
+/* =========================================================
+   FOOTER
+========================================================= */
+
+
+  .footer {
+    @apply text-center py-4 mt-10 border-t border-gray-300;
+  }
+
+  html.dark .footer {
+    @apply border-gray-700;
+  }
